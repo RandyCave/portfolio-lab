@@ -1,0 +1,39 @@
+/* VARIABLES Y TEMA OSCURO */
+:root {
+    /* 7 Variables de color */
+    --color-primary: #4a6fa5;
+    --color-secondary: #6b8cce;
+    --color-accent: #f59e0b;
+    --color-bg: #f9fafb;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-text-muted: #6b7280;
+
+    /* Tipografía */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    --font-size-base: 1rem;
+
+    /* Espaciado */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+
+    /* Otros */
+    --radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: 0.3s ease;
+}
+
+/* Modo Oscuro Automático */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #111827;
+        --color-surface: #1f2937;
+        --color-text: #f9fafb;
+        --color-text-muted: #9ca3af;
+        --color-primary: #6b8cce;
+    }
+}

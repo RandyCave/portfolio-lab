@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Contacto | Randy David Bermudez Garcia</title>
+    <meta name="description" content="Ponte en contacto con Randy David Bermudez Garcia para propuestas de proyectos o colaboraciones.">
+</head>
+<body>
+    <header>
+        <h1>Randy David Bermudez Garcia</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <p>¿Tienes alguna propuesta? ¡Escríbeme!</p>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo (requerido):</label><br>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" autocomplete="name" placeholder="Ej: Randy David">
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico (requerido):</label><br>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu-correo@ejemplo.com">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono (8 dígitos):</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" autocomplete="tel" placeholder="12345678" title="Ingresa 8 dígitos numéricos">
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de contacto preferida:</label><br>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles del Mensaje</legend>
+                
+                <p>
+                    <label for="asunto">Asunto:</label><br>
+                    <input list="sugerencias-asunto" id="asunto" name="asunto" placeholder="Selecciona o escribe un asunto">
+                    <datalist id="sugerencias-asunto">
+                        <option value="Propuesta de proyecto">
+                        <option value="Colaboración académica">
+                        <option value="Consulta general">
+                        <option value="Oferta de empleo">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="presupuesto">Rango de presupuesto estimado (si aplica):</label><br>
+                    <input type="range" id="presupuesto" name="presupuesto" min="0" max="1000" step="50" value="500">
+                    <span>500 USD</span>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje (máximo 500 caracteres):</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" maxlength="500" required placeholder="Escribe tu mensaje detallado aquí..."></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Consentimiento</legend>
+                <p>
+                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                    <label for="rgpd">Acepto la política de privacidad y el tratamiento de mis datos personales (RGPD).</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar Mensaje</button>
+                <button type="reset">Limpiar Formulario</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Randy David Bermudez Garcia.</p>
+        <address>
+            Contacto: <a href="mailto:rbermudez@uclv.edu.cu">rbermudez@uclv.edu.cu</a>
+        </address>
+    </footer>
+</body>
+</html>
